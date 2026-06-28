@@ -2,10 +2,12 @@ from pydantic import BaseModel, Field
 from typing import List, Optional, Dict
 
 class HEPContext(BaseModel):
-    theory_framework: str = Field(..., description="The underlying BSM theory framework, e.g., MSSM Natural SUSY.")
-    target_signal: str = Field(..., description="The specific signal process being probed, e.g., stop pair production.")
-    decay_topology: str = Field(..., description="The step-by-step decay final states including specific physics objects.")
-    motivation: str = Field(..., description="The theoretical problem solved or the kinematic phase space innovation.")
+    theory_framework: str = Field(..., description="The underlying BSM theory framework.")
+    theory_citation: str = Field(default="", description="Strict citation key for the theory framework.")
+    target_signal: str = Field(..., description="The specific signal process being probed.")
+    signal_citation: str = Field(default="", description="Strict citation key for the signal process cross-section.")
+    decay_topology: str = Field(..., description="The step-by-step decay final states.")
+    motivation: str = Field(..., description="The theoretical problem solved or kinematic innovations.")
 
 class ExperimentalSetup(BaseModel):
     collider_experiment: str = Field(..., description="e.g., Proton-Proton collisions at LHC, CMS Detector.")
@@ -18,25 +20,25 @@ class SignalModeling(BaseModel):
     fastsim_grid: str = Field(..., description="Parameters governing the SMS grid points, mass variations, and step sizes.")
 
 class ObjectSelection(BaseModel):
-    event_reconstruction: str = Field(..., description="Reconstruction algorithms used, e.g., Particle Flow.")
-    primary_vertex: str = Field(..., description="Cuts and configuration for defining the primary interaction vertex.")
-    muons: str = Field(..., description="Transverse momentum, isolation, and impact parameter cuts for muons.")
-    electrons: str = Field(..., description="Standard and low-pT hybrid electron selection and ID scores.")
-    jets_btagging: str = Field(..., description="Jet clustering algorithm, pT thresholds, jet energy corrections and b-tagging working points.")
-    met: str = Field(..., description="Missing transverse momentum corrections and filtering.")
+    event_reconstruction: str = Field(..., description="Core reconstruction algorithms utilized.")
+    primary_vertex: str = Field(..., description="Primary vertex specifications.")
+    muons: str = Field(..., description="Muon selection thresholds.")
+    electrons: str = Field(..., description="Electron selection thresholds.")
+    jets_btagging: str = Field(..., description="Jet definitions and b-tagging metrics.")
+    met: str = Field(..., description="Missing transverse energy calculation nuances.")
 
 class BackgroundEstimation(BaseModel):
-    composition: str = Field(..., description="Dominant, sub-dominant, prompt, and non-prompt background breakdowns.")
-    prompt_lepton_method: str = Field(..., description="Profile likelihood fit strategy across control and search regions.")
-    prompt_lepton_validation: str = Field(..., description="Validation region definitions and extrapolation testing.")
-    fake_lepton_method: str = Field(..., description="Data-driven ABCD/fake-rate method matrix details.")
-    fake_lepton_validation: str = Field(..., description="Simulation closure and data validation sideband strategies.")
+    composition: str = Field(default="Not specified", description="Prompt backgrounds layout.")
+    prompt_lepton_method: str = Field(default="Not specified", description="Methods for isolating prompt lepton estimations.")
+    prompt_lepton_validation: str = Field(default="Not specified", description="Validation procedures for prompt setups.")
+    fake_lepton_method: str = Field(default="Not specified", description="Data-driven fake rate implementation mechanics.")
+    fake_lepton_validation: str = Field(default="Not specified", description="Validation closure and data validation sideband strategies.")
 
 class StatisticalInterpretations(BaseModel):
-    systematics_signal: str = Field(..., description="Uncertainties on signal yields.")
-    systematics_prompt_bkg: str = Field(..., description="Uncertainties on prompt backgrounds.")
-    systematics_fake_bkg: str = Field(..., description="Uncertainties on fake/non-prompt backgrounds.")
-    statistical_model: str = Field(..., description="The specific test statistic, framework tools, and tracking targets like CLs.")
+    systematics_signal: str = Field(default="Not specified", description="Uncertainties on signal yields.")
+    systematics_prompt_bkg: str = Field(default="Not specified", description="Uncertainties on prompt backgrounds.")
+    systematics_fake_bkg: str = Field(default="Not specified", description="Uncertainties on fake/non-prompt backgrounds.")
+    statistical_model: str = Field(default="Not specified", description="The specific test statistic, framework tools, and tracking targets like CLs.")
 
 class EHEPPaperState(BaseModel):
     """

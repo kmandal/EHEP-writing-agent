@@ -2,7 +2,9 @@
 
 ## 1. HEP Context & Phenomenology
 * **Theory / Model Framework:** [Suppersymmetry (SUSY), Minimal Supersymmetric Standard Model (MSSM), R-parity conserving simplified model, Natural SUSY]
+* **Theory Framework Citation Key:** [Martin:1997un]
 * **Target Signal Process:** [Pair production of scalar top quarks (pp -> t~ t~*)]
+* **Target Signal Citation Key:** [CMS-SUS-21-002]
 * **Decay Topology & Final State:** [Each scalar top (stop) undergoes 4-body decay to a bottom quark, pair of ferimions and a neutralino (t~ -> b + ff' + chi_1^0), for one stop, this pair of fermions are lepton and neutrino, leading to a final state of one lepton + jets + missing transverse momentum (E_T^miss), these jets include b-tagged jets]
 * **Physics Motivation & Innovation:** [Addressing the gauge hierarchy problem via natural SUSY, treating neutralino as lightest supersymmetric paticle (LSP) in R-parity conserving model, making netralino as a dark matter candidate, accounting for observed relic density via stop-neutralino co-annihilation in compressed mass spectra; exploring challenging compressed phase space to probe if susy is hidden in this less explored territory]
 

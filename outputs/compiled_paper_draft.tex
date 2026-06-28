@@ -1,0 +1,123 @@
+\section{Introduction}
+The Standard Model (SM) of particle physics has been remarkably successful in describing fundamental particles and their interactions. However, it leaves several profound questions unanswered, including the origin of electroweak symmetry breaking, the nature of dark matter, and the hierarchy problem associated with the large radiative corrections to the Higgs boson mass. Supersymmetry (SUSY) \cite{Martin:1997un} is one of the most compelling extensions to the SM, proposing a symmetry between fermions and bosons. In R-parity conserving SUSY models, the lightest supersymmetric particle (LSP) is stable and provides a compelling candidate for the observed cosmological dark matter, often being a neutralino ($\tilde{\chi}_1^0$).
+
+A primary motivation for SUSY is its elegant solution to the gauge hierarchy problem. By introducing superpartners, SUSY provides a mechanism for canceling quadratic divergences to the Higgs boson mass, stabilizing the electroweak scale against quantum corrections up to the Planck scale. This naturalness argument suggests that the superpartners of SM particles, particularly the scalar top quarks (stops, $\tilde{\mathrm{t}}$), should not be significantly heavier than the electroweak scale.
+
+This paper presents a search for the pair production of scalar top quarks, $\mathrm{pp} \to \tilde{\mathrm{t}}\tilde{\mathrm{t}}^*$, in a challenging region of the SUSY parameter space characterized by a compressed mass spectrum \cite{CMS-SUS-21-002}. The search focuses on a simplified model where each stop decays via a four-body channel, $\tilde{\mathrm{t}} \to \mathrm{b} + \mathrm{f}\mathrm{f}' + \tilde{\chi}_1^0$. Specifically, one stop is assumed to decay into a bottom quark, a lepton, a neutrino, and the LSP ($\tilde{\mathrm{t}} \to \mathrm{b} + \ell + \nu + \tilde{\chi}_1^0$), while the other stop decays hadronically or semileptonically. This leads to a final state characterized by the presence of one isolated lepton, multiple jets (including b-tagged jets), and significant missing transverse momentum ($\ETmiss$) arising from the LSP and the neutrino.
+
+The exploration of compressed mass spectra is particularly challenging due to the small kinematic energy available for the visible decay products, resulting in soft objects and reduced $\ETmiss$. Such scenarios are often difficult to probe with traditional search strategies but are theoretically well-motivated, especially in the context of stop-neutralino co-annihilation for dark matter. This analysis is designed to enhance sensitivity to these challenging regions, aiming to uncover potential SUSY signals that might be hidden in less explored territories of the phase space.
+
+\subsection{Theoretical Motivation and Signal Model}
+Supersymmetry (SUSY) is a theoretical extension of the Standard Model (SM) that postulates a symmetry between fermions and bosons. For every SM particle, there exists a superpartner (sparticle) with a spin differing by half a unit. For instance, quarks have scalar superpartners called squarks, and leptons have sleptons. Gauge bosons have gauginos, and the Higgs bosons have higgsinos. The Minimal Supersymmetric Standard Model (MSSM) is the simplest realization of SUSY, introducing two Higgs doublets to preserve holomorphy and provide masses to both up-type and down-type quarks.
+
+A crucial aspect of many SUSY models is the conservation of R-parity, defined as $R_p = (-1)^{3(B-L)+2S}$, where $B$ is baryon number, $L$ is lepton number, and $S$ is spin. If R-parity is conserved, sparticles are always produced in pairs and decay into other sparticles, eventually leading to the lightest supersymmetric particle (LSP). The LSP is stable and weakly interacting, making it an excellent candidate for the observed cosmological dark matter. In many phenomenologically viable MSSM scenarios, the LSP is the lightest neutralino ($\tilde{\chi}_1^0$), a mass eigenstate formed by the mixing of bino, wino, and higgsino superpartners of the neutral gauge and Higgs bosons.
+
+The primary motivation for considering SUSY at the electroweak scale stems from its ability to address the gauge hierarchy problem. Quadratic divergences to the Higgs boson mass are canceled by contributions from superpartners, provided their masses are not excessively heavy. This naturalness argument suggests that the superpartners most strongly coupled to the Higgs boson, namely the scalar top quarks ($\tilde{\mathrm{t}}$, or stops), should have masses not far above the electroweak scale. The two stop mass eigenstates, $\tilde{\mathrm{t}}_1$ and $\tilde{\mathrm{t}}_2$, arise from the mixing of the superpartners of the left-handed and right-handed top quarks.
+
+This analysis focuses on a simplified R-parity conserving SUSY model where scalar top quarks are pair-produced, $\mathrm{pp} \to \tilde{\mathrm{t}}\tilde{\mathrm{t}}^*$. Each stop is assumed to decay via a four-body channel into a bottom quark, a pair of fermions, and the lightest neutralino LSP: $\tilde{\mathrm{t}} \to \mathrm{b} + \mathrm{f}\mathrm{f}' + \tilde{\chi}_1^0$. Specifically, the search targets events where one stop decays semileptonically, $\tilde{\mathrm{t}} \to \mathrm{b} + \ell + \nu + \tilde{\chi}_1^0$, while the other stop can decay either hadronically or semileptonically. This decay topology results in a final state characterized by one isolated lepton, multiple jets (including at least one b-tagged jet from the stop decay), and significant missing transverse momentum ($\ETmiss$) from the LSP and the neutrino.
+
+The scenario where the neutralino LSP accounts for the observed dark matter relic density often implies a compressed mass spectrum, particularly between the stop and the neutralino ($\Delta m = m_{\tilde{\mathrm{t}}} - m_{\tilde{\chi}_1^0}$). In such cases, the stop and neutralino masses are nearly degenerate, leading to efficient stop-neutralino co-annihilation in the early universe. This compressed mass spectrum presents significant experimental challenges. When $\Delta m$ is small, the visible decay products of the stop (the bottom quark, lepton, and neutrino) are produced with very low kinetic energy. This results in soft jets and leptons, and a reduced amount of $\ETmiss$, making their reconstruction and identification difficult. Furthermore, the four-body decay mode distributes the available energy among more particles compared to a two-body or three-body decay, exacerbating the softness of the final state objects. Therefore, this search necessitates sophisticated object reconstruction techniques and dedicated analysis strategies to maintain sensitivity in this challenging, yet theoretically well-motivated, region of the SUSY parameter space.
+
+\section{Experimental Apparatus and Data Samples}
+
+The data analyzed in this study were collected from proton-proton (pp) collisions at a center-of-mass energy of $\sqrt{s} = 13\TeV$ at the Large Hadron Collider (LHC) during the full Run 2 data-taking period, spanning from 2016 to 2018.
+
+The Compact Muon Solenoid (CMS) detector is a multi-purpose apparatus designed to detect a wide range of particles produced in high-energy collisions~\cite{CMS-TDR-001}. It features a large superconducting solenoid magnet, 6\,m in diameter and 13\,m in length, generating a uniform magnetic field of 3.8\,T parallel to the beam axis. The detector comprises several subsystems arranged concentrically around the interaction point. Closest to the interaction point is the inner tracking system, consisting of silicon pixel and strip detectors, which provides precise measurements of charged-particle trajectories within the pseudorapidity range $|\eta| < 2.5$. Beyond the tracker are the electromagnetic calorimeter (ECAL), made of lead tungstate crystals, and the hadron calorimeter (HCAL), constructed from brass and scintillator, covering $|\eta| < 3.0$ and $|\eta| < 5.2$ respectively. These calorimeters are crucial for measuring the energy and direction of electrons, photons, and hadronic jets. The outermost component is the muon system, embedded in the steel return yoke of the solenoid, which uses gas-ionization detectors to identify and measure the momentum of muons in the range $|\eta| < 2.4$. A two-tiered trigger system, consisting of a hardware-based Level-1 (L1) trigger and a software-based High-Level Trigger (HLT), is employed to select events of interest for offline storage and analysis~\cite{CMS-TDR-001}.
+
+The dataset used for this analysis corresponds to an integrated luminosity of $138~\mathrm{fb}^{-1}$ of pp collision data, recorded by the CMS experiment during the 2016, 2017, and 2018 data-taking periods. Primary data samples were collected using a variety of triggers designed to select events containing leptons, photons, or jets.
+
+Monte Carlo (MC) event generators are extensively used to model both signal processes and Standard Model background contributions. Signal and background processes are simulated using various event generators, including \MG~\cite{Alwall:2014hca}, \POWHEG~\cite{Nason:2004rx,Frixione:2007vw,Alioli:2010xd}, and \HERWIG~\cite{Bahr:2008pv,Bellm:2015jjp}, often interfaced with \PYTHIA~\cite{Sjostrand:2007gs} for parton showering and hadronization. The detector response is simulated using a detailed description of the CMS detector geometry and materials within the \GEANTfour framework~\cite{Agostinelli:2002hh}. Additional pp interactions in the same or nearby bunch crossings, known as pileup, are included in the MC simulations by overlaying minimum bias events on the hard-scattering process. The simulated events are then reconstructed using the same algorithms as applied to the collision data.
+
+\section{Particle Reconstruction and Event Selection}
+
+The reconstruction of physics objects in the CMS detector relies on the Particle Flow (PF) algorithm \cite{CMS-PAS-PFT-10-001}. The PF algorithm reconstructs and identifies individual particles (photons, electrons, muons, charged hadrons, and neutral hadrons) by combining information from all CMS subdetectors. These reconstructed particles are then used as inputs for higher-level object reconstruction.
+
+Primary vertices (PVs) are reconstructed from tracks. The PV with the largest sum of squared transverse momenta of its associated tracks is selected as the main interaction vertex for the event. Standard quality criteria are applied to ensure the integrity of the selected PV, such as requiring a minimum number of degrees of freedom and a small longitudinal distance from the beam spot.
+
+Muons are reconstructed by combining information from the inner tracker and the muon system \cite{CMS-PAS-MUO-10-004}. To enhance sensitivity to soft decay products characteristic of compressed stop scenarios, muons are selected with a transverse momentum \pt > 3 \GeV and an absolute pseudorapidity $|\eta| < 2.4$. Standard quality criteria, including requirements on track fit quality, number of hits in the tracker and muon system, and consistency between inner and global tracks, are applied. Isolation requirements are also imposed to distinguish prompt muons from those originating from hadronic decays.
+
+Electrons are reconstructed from a combination of a track in the inner tracker and an energy cluster in the electromagnetic calorimeter (ECAL) \cite{CMS-PAS-EGM-10-004}. Similar to muons, electrons are selected with a low transverse momentum threshold of \pt > 5 \GeV and an absolute pseudorapidity $|\eta| < 2.5$. Electron identification criteria are applied to suppress backgrounds from photon conversions and hadronic jets, based on shower shape variables, track-cluster matching, and isolation.
+
+Jets are reconstructed from PF candidates using the anti-\kt algorithm \cite{Cacciari:2008gp} with a distance parameter R=0.4. Jet energy corrections (JEC) are applied to account for detector response non-linearity and pileup contributions \cite{CMS-PAS-JME-10-003}. Jets are required to have \pt > 20 \GeV and an absolute pseudorapidity $|\eta| < 2.4$. To mitigate the effects of pileup, a jet identification working point is applied.
+Jets originating from b quarks are identified using the DeepCSV algorithm \cite{CMS-PAS-BTV-18-001}. A medium working point is applied for b-tagging, corresponding to a specific operating efficiency and misidentification rate.
+
+Missing transverse momentum (\ETmiss) is calculated as the negative vector sum of the transverse momenta of all reconstructed PF candidates in the event \cite{CMS-PAS-JME-10-004}. The \ETmiss calculation is corrected for the applied jet energy corrections.
+
+\section{Background Estimation}
+The accurate estimation of Standard Model (SM) backgrounds is crucial for the search for new physics phenomena and for precision measurements. Background processes are broadly categorized into two main types: those originating from prompt leptons and those involving non-prompt or fake leptons. This section details the methodologies employed for estimating these backgrounds, including data-driven techniques and Monte Carlo (MC) simulations, along with their respective validation strategies.
+
+\subsection{Prompt Lepton Backgrounds}
+Prompt leptons typically originate from the decay of electroweak bosons (W, Z) or top quarks. These processes often constitute irreducible backgrounds to many new physics searches.
+
+\subsubsection{Composition and Origin}
+% \subsubsection{Composition and Origin} - SECTION IN DEVELOPMENT
+
+\subsubsection{Estimation Strategy}
+% \subsubsection{Estimation Strategy} - SECTION IN DEVELOPMENT
+
+\subsubsection{Validation and Control Regions}
+% \subsubsection{Validation and Control Regions} - SECTION IN DEVELOPMENT
+
+\subsection{Non-prompt and Fake Lepton Backgrounds}
+Non-prompt or fake leptons arise from various sources, including hadrons misidentified as leptons, leptons from in-flight decays of light mesons, or leptons from heavy-flavor hadron decays. These backgrounds are typically estimated using data-driven methods due to the challenges in accurately modeling their complex origins with MC simulations alone.
+
+\subsubsection{Estimation Strategy}
+% \subsubsection{Estimation Strategy} - SECTION IN DEVELOPMENT
+
+\subsubsection{Validation and Closure Tests}
+% \subsubsection{Validation and Closure Tests} - SECTION IN DEVELOPMENT
+
+\section{Systematic Uncertainties}
+
+The estimation of signal and background yields is subject to various sources of systematic uncertainty, which are incorporated into the statistical model as nuisance parameters (NPs). These NPs are constrained by Gaussian or log-normal prior distributions, depending on their nature and impact.
+
+\subsection{Uncertainties Affecting Signal Yields}
+The following systematic uncertainties are considered for their impact on signal yields:
+\begin{itemize}
+    \item \textbf{Integrated Luminosity:} The uncertainty on the integrated luminosity typically ranges from 1.2\% to 2.5\%, depending on the data-taking year.
+    \item \textbf{Pileup:} The uncertainty associated with the modeling of pileup interactions is estimated to be 1--2\%.
+    \item \textbf{Jet Energy Corrections (JEC):} Uncertainties related to jet energy scale and resolution corrections contribute 2--5\% to the signal yield.
+    \item \textbf{b-tagging Efficiency Scale Factors:} The uncertainties on the scale factors applied to correct for differences in b-tagging efficiency between simulation and data are 1--3\%.
+    \item \textbf{Lepton Efficiency Scale Factors:} Uncertainties on lepton (electron and muon) reconstruction and identification efficiency scale factors are 1--2\%.
+    \item \textbf{ISR Jet Multiplicity Correction:} A 1\% uncertainty is assigned to the correction for initial-state radiation (ISR) jet multiplicity.
+    \textbf{L1 Prefire Correction:} The uncertainty associated with the L1 prefire correction is 1--2\%.
+    \item \textbf{PDF Uncertainties:} Uncertainties arising from parton distribution functions (PDFs) are typically less than 1\%.
+    \item \textbf{Renormalization and Factorization Uncertainties:} Theoretical uncertainties from renormalization and factorization scales are less than 1\%.
+    \item \textbf{MC Cross-section:} The uncertainty on the theoretical cross-section of simulated signal processes is 2--5\%.
+    \item \textbf{Trigger Efficiency and Scale Factors:} Uncertainties on trigger efficiency and associated scale factors are 1--3\%.
+    \item \textbf{Statistical Uncertainty due to Limited MC Sample:} The finite number of events in Monte Carlo (MC) simulations introduces statistical uncertainties on predicted yields, which are treated as Poisson uncertainties in the statistical model.
+\end{itemize}
+
+\subsection{Uncertainties Affecting Background Estimations}
+
+\subsubsection{Prompt Backgrounds}
+For prompt backgrounds, such as \ttbar, W+jets, and Z+jets, the experimental uncertainties described for signal yields (e.g., JEC, lepton efficiencies, integrated luminosity) are also applied. Additional theoretical uncertainties related to cross-sections and generator modeling are also considered.
+
+\subsubsection{Non-prompt/Fake Lepton Backgrounds}
+The non-prompt or fake lepton background is estimated using a data-driven ABCD method. The contribution to the signal region (SR) (region A) is estimated from data in an application region (AR) (region B) by weighting with a tight-to-loose ratio (C/D), which is measured from data in a dedicated measurement region (MR).
+
+The fake rate is defined as the probability of a fake or non-prompt lepton being selected as an analysis lepton (i.e., passing the tight selection). It is calculated as the fraction of events containing a tight lepton to the events with a loose-not-tight lepton (a lepton passing loose criteria but failing tight selection). The loose criteria are defined as follows:
+\begin{itemize}
+    \item \textbf{Muons:} Absolute isolation (\Isoabs) < 24 \GeV, relative isolation (\Isorel) < 2, and no upper cut on \dz.
+    \item \textbf{Standard Electrons:} \Isoabs < 24 \GeV, \Isorel < 2, a cut-based-veto ID, and no upper cut on \dz.
+    \item \textbf{Low \pt Electrons:} \Isoabs < 24 \GeV, \Isorel < 2, a BDT score > 3, and no upper cut on \dz.
+\end{itemize}
+All other criteria for loose leptons are identical to those for tight leptons.
+
+The measurement region (MR) for determining the tight-to-loose ratio is selected with the following criteria: \ETmiss < 50 \GeV, exactly one loose lepton, transverse mass (\MT) < 40 \GeV, \Njets(\pt > 40 \GeV) $\ge 1$, and \Nbtaggedjets = 0. To ensure an unbiased and efficient selection across the full lepton \pt spectrum, different datasets and trigger paths are employed for the fake rate measurement in the MR, accounting for trigger efficiency and prescale considerations. The fake rate is measured separately for muons and electrons, and prompt lepton contributions are subtracted from the data in the MR.
+
+The application region (AR) has identical selection criteria to the SR, with the sole exception that leptons are required to pass the loose selection but fail the tight selection. Each SR bin has a corresponding AR bin. When weighting the AR data by the tight-to-loose ratio, prompt lepton contributions are also subtracted from the AR data.
+
+\subsubsection{Validation of the Fake Lepton Estimation Method}
+The data-driven fake lepton estimation method undergoes two types of validation tests:
+\begin{itemize}
+    \item \textbf{Simulation-based Closure Test:} Performed using Z+jets and QCD MC samples. The predicted yield obtained using the ABCD method is compared with the direct yield obtained using MC truth information.
+    \item \textbf{Data Validation Test:} Conducted in an \ETmiss sideband validation region (VR) defined by 200 < \ETmiss < 300 \GeV. A pseudo SR-AR pair is formed in this region, and the tight-to-loose ratio obtained from the MR data is applied.
+\end{itemize}
+The uncertainties on the non-prompt background estimation arise from the statistical precision of the fake rate measurement in the MR, the statistical precision of the AR data, and systematic uncertainties associated with the prompt lepton subtraction and the closure tests.
+
+\section{Statistical Interpretation}
+
+The statistical interpretation of the results is performed using the Profile Likelihood Ratio test statistic. This approach allows for the simultaneous fitting of signal and background models to the observed data, while profiling over nuisance parameters that account for systematic uncertainties.
+
+Upper limits on the signal cross-section are extracted using the \CLs criterion, as recommended by the LHC experiments. The \CLs value is computed for various hypothetical signal cross-sections, and the 95\% confidence level (CL) upper limit is defined as the signal cross-section for which \CLs = 0.05. These limits are derived under the assumption of a compressed mass spectrum, which is characteristic of the signal models under investigation. The statistical analysis is implemented using the \textsc{CMS Combine} tool.
