@@ -56,23 +56,32 @@ EHEP-writing-agent/
 ## Setup and Installation
 
 1. Clone the Repository
+
 ```
 git clone [https://github.com/kmandal/EHEP-writing-agent.git](https://github.com/kmandal/EHEP-writing-agent.git)
 cd EHEP-writing-agent
+
 ```
 2. Set Up a Virtual Environment
+
 ```
 python3 -m venv .venv
 source .venv/bin/activate  # On Windows use: .venv\Scripts\activate
 pip install -r requirements.txt
+
 ```
+
 3. Configure Environment Variables
 
 Move the template environment file to an active configuration deployment file and populate your respective model keys:
+
 ```
 mv .env.example .env
+
 ```
+
 Open .env and add your environment credentials:
+
 ```
 # Language Model API Configuration
 ANTHROPIC_API_KEY="your-anthropic-api-key"
@@ -84,13 +93,16 @@ LANGCHAIN_TRACING_V2="true"
 LANGCHAIN_ENDPOINT="[https://api.smith.langchain.com](https://api.smith.langchain.com)"
 LANGCHAIN_API_KEY="your-langsmith-key"
 LANGCHAIN_PROJECT="EHEP-writing-agent"
+
 ```
 
 ## Usage
 
 To execute the entire multi-agent workflow, run the main engine entry point:
+
 ```
 python main.py
+
 ```
 
 
