@@ -1,6 +1,13 @@
 python-dotenv
 pydantic
 google-genai
+openai
+anthropic
 langsmith
 langchain
 langchain-google-genai
+langchain-openai
+langchain-anthropic
+langchain-community
+pypdf
+requests

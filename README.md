@@ -145,13 +145,13 @@ The core framework relies on a centralized state object (EHEPPaperState). Rather
 ```
 
 
-    Dynamic Section Grounding & Drafting: The orchestrator reads baseline data from data/analysis_input.md. For each individual paper section, it bundles citation anchors and figure metrics, passing them into the respective GPT-4o-mini drafting agent. The agent drafts the specialized physics prose and updates the corresponding section fields in the EHEPPaperState.
+Dynamic Section Grounding & Drafting: The orchestrator reads baseline data from data/analysis_input.md. For each individual paper section, it bundles citation anchors and figure metrics, passing them into the respective GPT-4o-mini drafting agent. The agent drafts the specialized physics prose and updates the corresponding section fields in the EHEPPaperState.
 
-    Abstract Assembly: Once the core body sections are compiled into the state, Gemini 1.5 Flash consumes the full integrated context to construct an authoritative, single-paragraph executive abstract, updating the state directly.
+Abstract Assembly: Once the core body sections are compiled into the state, Gemini 1.5 Flash consumes the full integrated context to construct an authoritative, single-paragraph executive abstract, updating the state directly.
 
-    Refinement & Typesetting Review: The orchestrator loops over the completed sections in the state, sending the text blocks into Claude 3.5 Sonnet to iron out grammatical flow and verify that math parameters (like subscripts or limit operators) are structurally secure inside native LaTeX math mode boundaries before committing the polished text back to the state.
+Refinement & Typesetting Review: The orchestrator loops over the completed sections in the state, sending the text blocks into Claude 3.5 Sonnet to iron out grammatical flow and verify that math parameters (like subscripts or limit operators) are structurally secure inside native LaTeX math mode boundaries before committing the polished text back to the state.
 
-    Asset Synthesis & Compilation: The final text is parsed to resolve macro alignments against ANMacros.tex, wide tabular matrices are automatically scaled into double-column formatting spans (\begin{table*}), and the output is compiled to disk inside outputs/.
+Asset Synthesis & Compilation: The final text is parsed to resolve macro alignments against ANMacros.tex, wide tabular matrices are automatically scaled into double-column formatting spans (\begin{table*}), and the output is compiled to disk inside outputs/.
 
 
 

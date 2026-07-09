@@ -1,0 +1,28 @@
+{
+  "figures": [
+    {
+      "filename": "stop4-body.png",
+      "section": "latex_introduction",
+      "placement": "h!",
+      "caption": "Feynman diagram representing the four-body decay topology of the top squark $\\tilde{\\text{t}} \\to \\text{b} + \\text{ff}' + \\tilde{\\chi}_1^0$ in the compressed mass spectrum regime."
+    },
+    {
+      "filenames": ["PreSelection_LeptonpT_2016.jpg", "PreSelection_LeptonpT_201718.jpg"],
+      "section": "latex_event_selection",
+      "placement": "t!",
+      "caption": "Distributions of the lepton transverse momentum $p_{\\mathrm{T}}$ at the baseline preselection stage for the 2016 (left) and 2017--2018 combined (right) data-taking periods."
+    },
+    {
+      "filename": "TLRatio_ele_brl.png",
+      "section": "latex_background_estimation",
+      "placement": "th",
+      "caption": "Tight-to-loose ratios calculated for prompt and misidentified electrons in the barrel region as a function of lepton kinematic properties."
+    },
+    {
+      "filename": "MoneyPlot_2017.png",
+      "section": "latex_results",
+      "placement": "h!",
+      "caption": "Observed data and predicted background yields across the design analysis search bins for the 2017 full Run 2 data sample."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+    "tables": [
+	{
+            "section": "Systematic Uncertainties",
+            "filename": "sys_uncertainties_signal.txt",
+            "caption": "Summary of systematic uncertainties evaluated for the compressed stop signal samples.",
+            "label": "sys_signal"
+        },
+	{
+            "section": "Systematic Uncertainties",
+            "filename": "sys_uncertainties_prompt.txt",
+            "caption": "Summary of systematic uncertainties assigned to the prompt Standard Model background estimations.",
+            "label": "sys_prompt"
+        },
+        {
+            "section": "Systematic Uncertainties",
+            "filename": "sys_uncertainties_fake.txt",
+            "caption": "Systematic uncertainties assigned to the non-prompt/fake lepton background estimations.",
+            "label": "sys_fake"
+        }
+    ]
+}
