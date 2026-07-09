@@ -107,12 +107,15 @@ python main.py
 
 
 Advanced Editorial Polishing Toggle (src/agents.py):
- 	ENABLE_EDITORIAL_LLM_POLISH (Boolean): Set to True to route raw drafted text through the Claude editorial layer for advanced grammar correction and typesettin		polish. Toggle to False to compile raw drafts directly and save API credits during rapid debugging.
+
+ENABLE_EDITORIAL_LLM_POLISH (Boolean): Set to True to route raw drafted text through the Claude editorial layer for advanced grammar correction and typesettin		polish. Toggle to False to compile raw drafts directly and save API credits during rapid debugging.
 
 
 ## How It Works: The Iterative State-Agent Pipeline
 
 The core framework relies on a centralized state object (EHEPPaperState). Rather than a strict one-way chain, the orchestrator drives a forward-and-update feedback cycle. Every agent reads current parameters from the state, runs its specialized model operations, and actively writes its results back onto the shared state graph.
+
+```text
 
           ┌─────────────────────────────────────────────────────────┐
           │                  Central State Graph                    │
@@ -139,6 +142,7 @@ The core framework relies on a centralized state object (EHEPPaperState). Rather
                                                                 ▼
                                                     [outputs/compiled_paper]
 
+```
 
 
     Dynamic Section Grounding & Drafting: The orchestrator reads baseline data from data/analysis_input.md. For each individual paper section, it bundles citation anchors and figure metrics, passing them into the respective GPT-4o-mini drafting agent. The agent drafts the specialized physics prose and updates the corresponding section fields in the EHEPPaperState.
